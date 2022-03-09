@@ -154,3 +154,46 @@ body {
   right: 0;
   display: none;
 }
+
+/* images */
+
+.main-image {
+  width: 30rem;
+  border-radius: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.secondary-images {
+  width: 30rem;
+}
+
+.secondary-images img {
+  width: 7.2rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.secondary-images img:hover {
+  opacity: 0.7;
+}
+
+.change {
+  opacity: 0.7;
+  border: 3px solid hsl(26, 100%, 55%);
+}
+
+.toggle {
+  opacity: 0.7;
+  border: 3px solid hsl(26, 100%, 55%);
+}
+
+/* .thumbnail:first-child {
+  opacity: 0.7;
+  border: 3px solid hsl(26, 100%, 55%);
+} */
