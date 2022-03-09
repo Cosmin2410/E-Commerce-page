@@ -9,6 +9,9 @@
   <body>
     <header>
       <nav class="navigation">
+        <div class="ham-menu">
+          <img src="images/icon-menu.svg" alt="hamburger menu" />
+        </div>
         <div class="logo">
           <img src="images/logo.svg" alt="logo" />
         </div>
@@ -25,13 +28,26 @@
         <div class="cart-user">
           <div class="cart">
             <img src="images/icon-cart.svg" alt="cart" />
+            <p class="cart-number"></p>
           </div>
           <div class="image-user">
             <img src="images/image-avatar.png" alt="image user" />
           </div>
         </div>
       </nav>
+
+      <div class="navigation-phone">
+        <img src="images/icon-close.svg" alt="close menu" class="close-menu" />
+        <ul>
+          <a href="#"> <li>Collections</li></a>
+          <a href="#"><li>Men</li></a>
+          <a href="#"><li>Women</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Contact</li></a>
+        </ul>
+      </div>
     </header>
+    <div id="overlay"></div>
     <script src="main.js"></script>
   </body>
 </html>
