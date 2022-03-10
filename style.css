@@ -116,7 +116,7 @@ body {
   bottom: 0;
   padding-left: 1.5rem;
   padding-top: 2rem;
-  z-index: 1;
+  z-index: 2;
   display: none;
 }
 
@@ -153,34 +153,53 @@ body {
   left: 0;
   right: 0;
   display: none;
+  z-index: 1;
 }
 
 /* images */
 
-.main-image {
+.images-choose,
+.images-choose-pop-up {
+  width: fit-content;
+}
+
+.main-image,
+.main-image-pop-up {
   width: 30rem;
   border-radius: 15px;
   cursor: pointer;
   display: none;
 }
 
+.main-image-pop-up {
+  cursor: auto;
+}
+
 .show {
   display: block;
 }
 
-.secondary-images {
+.secondary-images,
+.secondary-images-pop-up {
   width: 30rem;
 }
 
-.secondary-images img {
+.secondary-images img,
+.secondary-images-pop-up img {
   width: 7.2rem;
   border-radius: 15px;
   margin-top: 2rem;
   cursor: pointer;
 }
 
-.secondary-images img:hover {
+.secondary-images img:hover,
+.secondary-images-pop-up img:hover {
   opacity: 0.7;
+}
+
+.secondary-images-pop-up img:hover {
+  opacity: 1;
+  border: 3px solid hsl(26, 100%, 55%);
 }
 
 .change {
@@ -188,12 +207,67 @@ body {
   border: 3px solid hsl(26, 100%, 55%);
 }
 
-.toggle {
+.change-pop-up {
+  border: 3px solid hsl(26, 100%, 55%);
+}
+
+.toggle,
+.toggle-pop-up {
   opacity: 0.7;
   border: 3px solid hsl(26, 100%, 55%);
+}
+
+.toggle-pop-up {
+  opacity: 1;
 }
 
 /* .thumbnail:first-child {
   opacity: 0.7;
   border: 3px solid hsl(26, 100%, 55%);
 } */
+
+/* Image Pop Up */
+
+.image-carousel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 2;
+}
+
+.close-image-pop-up {
+  width: 1.5rem;
+  margin-bottom: 1rem;
+  float: right;
+  cursor: pointer;
+}
+
+/* pop up nav image */
+
+.navigation-images {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  top: 50%;
+}
+
+.prev-btn,
+.next-btn {
+  cursor: pointer;
+  margin-right: -1.3rem;
+  margin-left: -1.3rem;
+  border: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-visible {
+  display: block;
+}
