@@ -271,3 +271,117 @@ body {
 .image-visible {
   display: block;
 }
+
+/* Description and add to cart */
+
+.images-cart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.secondary-images {
+  grid-row-start: 2;
+  margin: 0 auto;
+}
+
+.images-choose {
+  margin: 0 auto;
+}
+
+.buy-shoe {
+  width: 25rem;
+}
+
+.sneaker-company {
+  font-size: 0.9rem;
+  color: hsl(26, 100%, 55%);
+  font-weight: bold;
+}
+
+.sneaker-company h1 {
+  font-weight: bold;
+}
+
+.description {
+  opacity: 1;
+  line-height: 1.6;
+  color: rgb(173, 173, 173);
+}
+
+.price-sale {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: -1.2rem;
+}
+
+.price-sale .price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.sale {
+  background-color: antiquewhite;
+  padding: 3px;
+  border-radius: 5px;
+  color: hsl(26, 100%, 55%);
+  font-weight: 450;
+}
+
+.cut-price {
+  color: rgb(173, 173, 173);
+  text-decoration: line-through;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.add-remove {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: lightgray;
+  /* width: 2rem; */
+  padding: 1rem;
+  height: 2.5rem;
+  border-radius: 10px;
+}
+
+.quanity {
+  font-weight: bold;
+}
+
+.add-remove img {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.add-remove-cart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.add-cart img {
+  width: 1rem;
+  height: 1rem;
+}
