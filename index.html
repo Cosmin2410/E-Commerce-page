@@ -27,7 +27,7 @@
 
         <div class="cart-user">
           <div class="cart">
-            <img src="images/icon-cart.svg" alt="cart" />
+            <img class="cart-icon" src="images/icon-cart.svg" alt="cart" />
             <p class="cart-number"></p>
           </div>
           <div class="image-user">
@@ -40,11 +40,15 @@
         <div class="title">
           <h2>Cart</h2>
         </div>
+        <div class="no-items">
+          <p>Your cart is empty</p>
+        </div>
         <div class="cart-items">
           <img src="images/image-product-1-thumbnail.jpg" />
           <div class="title-item">
             <h3>Fall Limited Edition Sneakers</h3>
-            <p>$125.00 x 3 <span>$375.00</span></p>
+            <p class="text-items">$125.00 x 3</p>
+            <p class="total">3123$</p>
           </div>
           <img class="delete-button" src="images/icon-delete.svg" />
         </div>
@@ -75,6 +79,14 @@
         <img class="main-image three" src="images/image-product-3.jpg" />
         <img class="main-image four" src="images/image-product-4.jpg" />
       </div>
+
+      <!-- <div class="navigation-images">
+        <button class="prev-btn">
+          <img src="images/icon-previous.svg" />
+        </button>
+        <button class="next-btn"><img src="images/icon-next.svg" /></button>
+      </div> -->
+
       <div class="secondary-images">
         <img
           class="thumbnail toggle one"
@@ -102,14 +114,15 @@
         <div class="price-sale">
           <p class="price">$125.00</p>
           <p class="sale">50%</p>
+          <p class="cut-price-mobile">$250.00</p>
         </div>
-        <p class="cut-price">$250.00</p>
+        <p class="cut-price-desktop">$250.00</p>
 
         <div class="add-remove-cart">
           <div class="add-remove">
-            <img src="images/icon-minus.svg" />
+            <img class="minus" src="images/icon-minus.svg" />
             <p class="quantity">0</p>
-            <img src="images/icon-plus.svg" />
+            <img class="plus" src="images/icon-plus.svg" />
           </div>
           <div class="cart">
             <button class="add-cart">
@@ -139,24 +152,6 @@
           <button class="next-btn"><img src="images/icon-next.svg" /></button>
         </div>
       </div>
-      <!-- <div class="secondary-images-pop-up">
-        <img
-          class="thumbnail-pop-up toggle-pop-up one"
-          src="images/image-product-1-thumbnail.jpg"
-        />
-        <img
-          class="thumbnail-pop-up two"
-          src="images/image-product-2-thumbnail.jpg"      
-        />
-        <img
-          class="thumbnail-pop-up three"
-          src="images/image-product-3-thumbnail.jpg"
-        />
-        <img
-          class="thumbnail-pop-up four"
-          src="images/image-product-4-thumbnail.jpg"
-        />
-      </div> -->
     </div>
 
     <script src="main.js"></script>
